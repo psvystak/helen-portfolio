@@ -24,7 +24,6 @@ function mouseWheelWatcher(e) {
     }
     window.scrollTo(0, scrollStep * elementCounter);
     window.removeEventListener("mousewheel", mouseWheelWatcher);
-    e.preventDefault();
     setTimeout(function () {
         window.addEventListener("mousewheel", mouseWheelWatcher);
     }, 500)
