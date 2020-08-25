@@ -1,0 +1,42 @@
+body {
+	font-family: "Ubuntu";
+}
+
+header {
+	background: url("../images/404-bg.png") no-repeat center/cover;
+	padding: 27vh 26% 3.7% 31.3%;
+}
+
+.menu-title-wrapper {
+	flex-flow: column;
+	transform: rotate(3deg);
+	text-align: center;
+}
+
+header h1 {
+	color: #A2A81A;
+	letter-spacing: 0.9vw;
+	line-height: 4.6vw;
+	font-size: 10.1vw;
+}
+
+header h2 {
+	color: #FF5D2B;
+	margin-top: 0.7vh;
+	letter-spacing: 0.1vw;
+	line-height: 3.9vw;
+	font-size: 3.6vw;
+}
+
+header h3 {
+	color: #A2A81A;
+	margin-top: 0.7vh;
+	letter-spacing: 0.2vw;
+	line-height: 2.8vw;
+	font-size: 2.3vw;
+}
+
+header h1 small {
+	font-size: 4.1vw;
+	letter-spacing: 0.4vw;
+}
