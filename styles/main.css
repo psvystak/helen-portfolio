@@ -18,6 +18,7 @@ header {
 
 header ul li {
 	position: relative;
+	list-style: none;
 	z-index: 0;
 	font-size: 36px;
 }
