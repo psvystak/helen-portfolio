@@ -4,7 +4,10 @@ body {
 
 header {
 	background: url("../images/404-bg.png") no-repeat center/cover;
-	padding: 27vh 26% 3.7% 31.3%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 
 .menu-title-wrapper {
@@ -39,4 +42,14 @@ header h3 {
 header h1 small {
 	font-size: 4.1vw;
 	letter-spacing: 0.4vw;
+}
+
+#back {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	font-size: 22px;
+	animation: 1.1s blink infinite;
+	color: #ff5d2b;
+	transform: rotate(27deg);
 }

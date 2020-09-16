@@ -118,6 +118,16 @@ nav {
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
+.link-to-404 {
+	position: absolute;
+	bottom: -5vw;
+	right: 0;
+	font-size: 3vh;
+	animation: 1.1s blink infinite;
+	color: #ff5d2b;
+	text-decoration: none;
+}
+
 #menu li {
 	padding: 10px 0;
 	font-size: 22px;
@@ -143,6 +153,7 @@ header ul li {
 .content-wrapper {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 
 .menu-title-wrapper .side-text {
@@ -157,7 +168,6 @@ header h1 {
 	font-weight: 800;
 	letter-spacing: 1.6vw;
 	text-align: center;
-	margin-top: 33.5vh;
 }
 
 main .film-section {
@@ -225,4 +235,16 @@ footer {
 footer h3 {
 	color: #ffffff;
 	font-size: 8vw;
+}
+
+@keyframes blink {
+	from {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
