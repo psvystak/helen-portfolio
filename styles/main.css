@@ -8,7 +8,8 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 	background: #FF5D2B;
-	padding: 4.7% 3% 4.7% 2.8%;
+	padding: 4.7% 3% 4.7% 3%;
+	overflow: hidden;
 }
 
 nav {
@@ -26,7 +27,6 @@ nav {
 	top: 0;
 	left: 0;
 	width: 200px;
-	height: 1;
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -65,7 +65,7 @@ nav {
 	border-radius: 3px;
 	z-index: 1;
 	transform-origin: 4px 0px;
-	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+	transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 1s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
 
 #menuToggle .menu-line:nth-of-type(2) {
@@ -115,7 +115,7 @@ nav {
 	-webkit-font-smoothing: antialiased;
 	transform-origin: 0% 0%;
 	transform: translate(-100%, 0);
-	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+	transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 .link-to-404 {
@@ -143,6 +143,11 @@ nav {
 	color: white;
 }
 
+.menu-title-wrapper ul{
+	transform: translateX(-119%);
+	animation: 1s ease animationSide1 forwards;
+}
+
 header ul li {
 	position: relative;
 	list-style: none;
@@ -160,6 +165,8 @@ header ul li {
 	width: 17%;
 	text-align: right;
 	font-size: 36px;
+	transform: translateX(119%);
+	animation: ease 1s animationSide2 forwards;
 }
 
 header h1 {
@@ -168,6 +175,8 @@ header h1 {
 	font-weight: 800;
 	letter-spacing: 1.6vw;
 	text-align: center;
+	transform: translateY(130%);
+	animation: ease 1s animationH1 forwards;
 }
 
 main .film-section {
@@ -245,6 +254,39 @@ footer h3 {
 		opacity: 0;
 	}
 	to {
+		opacity: 1;
+	}
+}
+
+@keyframes animationH1 {
+	from{
+		transform: translateY(130%);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes animationSide1 {
+	from{
+		transform: translateX(-119%);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes animationSide2 {
+	from{
+		transform: translateX(119%);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
 		opacity: 1;
 	}
 }
