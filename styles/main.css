@@ -187,12 +187,25 @@ main .film-section {
 	padding: 6.7% 17% 6.7% 17%;
 }
 
-.film-section figure {
+.film-section .embla {
+	overflow: hidden;
 	width: 41%;
 }
 
-.film-section figure img {
-	width: 86%;
+.film-section .embla__container {
+	display: flex;
+}
+
+.embla__slide {
+	min-width: 100%;
+	position: relative;
+	padding: 0 30px 5px 30px;
+}
+
+.film-section .embla img {
+	width: 100%;
+	user-select: none;
+	margin: 0;
 }
 
 .film-section figcaption {
@@ -226,11 +239,15 @@ main > section:nth-of-type(even) .content-wrapper {
 	background: #FCE403;
 }
 
-main > section:nth-of-type(even) figure img {
+main > section:nth-of-type(even) .embla img {
 	margin-left: auto; /* margin-left: inherit; */
 }
 
-main > section:nth-of-type(even) figure {
+main > section{
+	overflow: hidden;
+}
+
+main > section:nth-of-type(even) .embla {
 	text-align: right;
 }
 
